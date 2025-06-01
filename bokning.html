@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boka – BenBells Hundpensionat</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    nav {
+      background-color: #4a3d2f;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 2em;
+      background: white;
+      margin-top: 1em;
+      border-radius: 8px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75em;
+      margin: 0.5em 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #4a3d2f;
+      color: white;
+      padding: 0.75em 1.5em;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .message {
+      background-color: #d4edda;
+      color: #155724;
+      padding: 1em;
+      margin-bottom: 1em;
+      border: 1px solid #c3e6cb;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Hem</a>
+  <a href="tjanster.html">Tjänster</a>
+  <a href="priser.html">Priser</a>
+  <a href="galleri.html">Galleri</a>
+  <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<main>
+  <h1>Boka plats</h1>
+
+  <!-- Bekräftelsemeddelande -->
+  <div class="message">
+    Tack! Din bokning är mottagen. Vi återkommer med bekräftelse inom kort.
+  </div>
+
+  <form action="https://formsubmit.co/NellieMaLmberG@outlook.com" method="POST">
+    <input type="hidden" name="_next" value="https://qsram.github.io/Benbells/bokning.html?skickat=true">
+    <input type="text" name="namn" placeholder="Ditt namn" required>
+    <input type="tel" name="telefon" placeholder="Telefonnummer" required>
+    <input type="email" name="email" placeholder="E-postadress" required>
+    <textarea name="meddelande" placeholder="Meddelande eller önskemål" rows="5" required></textarea>
+    <button type="submit">Skicka bokning</button>
+  </form>
+</main>
+
+</body>
+</html>
